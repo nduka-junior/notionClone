@@ -9,7 +9,7 @@ function Section1() {
         </h1>
         <div className="text-xl lg:text-2xl font-medim">
           <h1>Turn ideas into action</h1>
-          <h1>with Notion's AI-powered workspace.</h1>
+                  <h1>with Notion{ "'"}s AI-powered workspace.</h1>
         </div>
 
         <div className="flex gap-3 items-center justify-center font-medium pt-3">
