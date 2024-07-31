@@ -35,7 +35,7 @@ function Nav() {
           <div
             className={`lg:flex ${
               isOpen ? "block" : "hidden"
-            } max-lg:absolute max-lg:top-10 w-full `}
+            } max-lg:absolute max-lg:top-10 w-full bg-white max-lg:h-screen `}
           >
             <div className="w-full lg:flex  gap-5 ">
               {headersLinks.map((headers, index) => {
@@ -112,7 +112,7 @@ function Nav() {
         </div>
         {/*  */}
         {isOpen ? (
-          <div className="lg:hidden cursor-pointer" onClick={toggleDropdown}>
+          <div className="lg:hidden cursor-pointer  " onClick={toggleDropdown}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 64 64"
