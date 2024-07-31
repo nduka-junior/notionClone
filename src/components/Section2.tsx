@@ -10,7 +10,7 @@ import {
   type CarouselApi,
 } from "@/components/ui/carousel";
 
-import { carouselItem } from "@/utils/CarouselItems";
+import { carouselItem } from "@/utils/carouselItems";
 function Section2() {
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
