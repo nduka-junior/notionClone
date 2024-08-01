@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/carousel";
 
 import { carouselItem } from "@/utils/carouselItems";
+import { Button } from "./ui/button";
 function Section2() {
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
@@ -30,16 +31,17 @@ function Section2() {
   }, [api]);
 
   return (
-    <div className="py-20 max-sm:py-15 flex flex-col items-center  ">
-      <div className="text-center">
+    <div className="pt-20 max-sm:py-15 flex flex-col items-center  ">
+      <div className="text-center flex flex-col gap-2 items-center">
         <h1 className="before:content-open-quote after:content-close-quote text-[40px] max-sm:text-3xl max-xs:text-2xl">
           {"Your AI everything app."}
+          
         </h1>
-        <h1 className="text-2xl max-sm:text-xl font-semibold">Forbes</h1>
+<Image src="/forbes.png" width={100} height={100} alt="forbesicon" />
       </div>
-      <div className="w-full flex justify-center  py-20 max-sm:py-10 max-xs:py-5">
+      <div className="w-full flex justify-center  pt-20 max-sm:py-10 max-xs:py-5">
         <Carousel
-          className="w-full max-w-[70vw] "
+          className="w-full max-w-[70vw] lg:max-w-[60vw] "
           opts={{ loop: true }}
           setApi={setApi}
         >
@@ -77,7 +79,7 @@ function Section2() {
           <CarouselContent className="flex items-center">
             {carouselItem.map((item, index) => (
               <CarouselItem key={index} className=" ">
-                <div className=" gap-2 space-y-4 ">
+                <div className=" gap-2 space-y-4">
                   <div className="flex items-center gap-3 justify-center lg:hidden  ">
                     <Image
                       src={item.logoURL}
@@ -102,8 +104,24 @@ function Section2() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+          <div className="flex justify-center mt-2 md:hidden gap-3">
+            {Array.from({ length: count }).map((_, i) => (
+              <div
+                key={i}
+                className={`mx-1  rounded-full p-1.5 cursor-pointer ${
+                  i === current - 1
+                    ? "bg-black hover:bg-black"
+                    : "bg-neutral-600/75"
+                }`}
+                onClick={() => api?.scrollTo(i)}
+              ></div>
+            ))}
+          </div>
+          <div>
+            {" "}
+            <CarouselPrevious />
+            <CarouselNext />
+          </div>
         </Carousel>
       </div>
     </div>
