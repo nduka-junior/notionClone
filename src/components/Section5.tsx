@@ -11,7 +11,7 @@ function Section5() {
       <div>
         <Tabs
           defaultValue="board"
-          className="w-[80vw]  max-sm:w-[80vw]  mb-8 space-y-5"
+          className="w-[75vw]  max-sm:w-[80vw]  mb-8 space-y-5"
         >
           <div className=" xl:hidden">
             <TabsList className="flex flex-wrap gap-2 bg-transparent mt-5 text-black  mb-16  ">
