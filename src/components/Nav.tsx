@@ -35,7 +35,7 @@ function Nav() {
           <div
             className={`lg:flex ${
               isOpen ? "block" : "hidden"
-            } max-lg:absolute max-lg:top-10 w-full bg-white max-lg:h-auto z-50   `}
+            } max-lg:absolute max-lg:top-10 w-full bg-white h-screen max-lg:h-auto z-50   `}
           >
             <div className="w-full lg:flex  gap-5 ">
               {headersLinks.map((headers, index) => {
