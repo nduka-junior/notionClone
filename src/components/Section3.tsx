@@ -30,7 +30,7 @@ function Section3() {
           Powering the world{"'"}s best teams, from next-generation startups to
           established enterprises.
         </h1>
-        <h1 className="text-[#0083FA] font-light  hover:underline">
+        <h1 className="text-[#0083FA] font-light  hover:underline pb-4">
           Read customer stories <span>→</span>
         </h1>
       </div>
