@@ -76,7 +76,7 @@ function Section4() {
             </TabsContent>
             <TabsContent value="calendar">
               <Image
-                src="/calendar.png"
+                src="/Calendar.png"
                 width={1000}
                 height={1000}
                 alt="boardimage"
